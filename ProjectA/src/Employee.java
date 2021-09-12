@@ -1,20 +1,20 @@
 public class Employee {
-	private String employeeId;
+	private int employeeId;
 	private String employeeName;
 	private int salary;
-	private int profit;
+	private int monthlysales;
 	
-	public Employee(String employeeId, String employeeName, int salary) {
+	public Employee(int employeeId, String employeeName, int salary) {
 		super();
 		this.employeeId = employeeId;
 		this.employeeName = employeeName;
 		this.salary = salary;
-		this.profit=0;
+		this.monthlysales=0;
 	}
-	public String getEmployeeId() {
+	public int getEmployeeId() {
 		return employeeId;
 	}
-	public void setEmployeeId(String employeeId) {
+	public void setEmployeeId(int employeeId) {
 		this.employeeId = employeeId;
 	}
 	public String getEmployeeName() {
@@ -26,11 +26,11 @@ public class Employee {
 	public int getSalary() {
 		return salary;
 	}
-	public int getProfit() {
-		return profit;
+	public int getmonthlysales() {
+		return monthlysales;
 	}
-	public void setProfit(int profit) {
-		this.profit = profit;
+	public void setmonthlysales(int monthlysales) {
+		this.monthlysales = monthlysales;
 	}
 	public void setSalary(int salary) {
 		this.salary = salary;

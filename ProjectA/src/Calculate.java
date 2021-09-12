@@ -5,13 +5,13 @@ public Calculate() {
 	}
 
 public void cal (Employee em){
-    double ommision=0;
-    if (em.getProfit()<= 50000){
-        ommision = em.getProfit()+(em.getProfit()*0.05);    }
-    else if(em.getProfit() >= 50001) {
-        ommision = em.getProfit()+(em.getProfit()*0.10);
+    double commision=0;
+    if (em.getmonthlysales()<= 50000){
+        commision = em.getSalary()+(em.getmonthlysales()*0.05);    }
+    else if(em.getmonthlysales() >= 50001) {
+        commision = em.getSalary()+(em.getmonthlysales()*0.10);
     }
-    System.out.printf("Name %s Profit = %f",em.getEmployeeName(),ommision);
+    System.out.printf("%s get paid = %.2f Baht",em.getEmployeeName(),commision);
 }
 
 }
