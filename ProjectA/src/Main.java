@@ -18,10 +18,9 @@ public class Main {
         System.out.println("");
         System.out.println("End of the month now, please answer");
         Employee person1=new Employee(employeeId,employeeName,Salary);
-        System.out.print("Input Your EmployeeID: ");
-        search = sc2.nextInt();
-        
-        while (checkEmployee==false){
+        while (!checkEmployee){
+        	System.out.print("Input Your EmployeeID: ");
+        	search = sc2.nextInt();
         	if(person1.getEmployeeId()==search) {
         		System.out.print("Input monthlysales: ");
         		int monthlysales = sc.nextInt();
@@ -31,9 +30,10 @@ public class Main {
         		checkEmployee=true;
         	}
         	else {
-            	System.out.print("can't find id");
-        	}
+            	System.out.println("can't find id");
+        	}	
         }
+        
     }
 
 }
