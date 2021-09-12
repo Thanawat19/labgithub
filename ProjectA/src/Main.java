@@ -23,28 +23,27 @@ public class Main {
 		// TODO Auto-generated method stub
 		Boolean checkEmployee=false;
 		System.out.print("Input Your EmployeeID: ");
-		String employeeId= sc.nextLine();
+		int employeeId= sc2.nextInt();
 		System.out.print("Input Your Name: ");
 		String employeeName= sc.nextLine();
 		System.out.print("Input Your Salary: ");
 		int salary= sc.nextInt();		
 		System.out.println("__________________________________");
-		
+		System.out.println("End of the month now, please answer");
 		
 		while (checkEmployee==false){
 			System.out.print("Input Your Id: ");
-			String employeeId2= sc2.nextLine();
-//				if(employeeId2==employeeId) {
-//					System.out.print("EmployeeID True");
+			int employeeId2= sc2.nextInt();
+				if(employeeId2==employeeId) {
 					System.out.print("Input monthly sales : ");
 					int monthlysales = sc.nextInt();
 					double compen=Calculate(monthlysales,salary);
 					printcompensation(employeeName,compen);
 					checkEmployee=true;
-//				}
-//				else {
-//					System.out.println("ID Not Found");
-//				}
+				}
+				else {
+					System.out.println("ID Not Found");
+				}
 			}
 	}
 }
