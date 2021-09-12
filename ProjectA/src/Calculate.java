@@ -11,6 +11,9 @@ public void cal (Employee em){
     else if(em.getmonthlysales() >= 50001) {
         commision = em.getSalary()+(em.getmonthlysales()*0.10);
     }
+    if(commision < 12000) {
+    	commision = 12000;
+    }
     System.out.printf("%s get paid = %.2f Baht",em.getEmployeeName(),commision);
 }
 
