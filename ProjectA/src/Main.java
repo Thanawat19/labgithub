@@ -12,7 +12,10 @@ public class Main {
 		
 		return commission;
 	}
+	static void printcompensation(String employeeName,double compen) {
+		System.out.println(employeeName+" get paid "+ compen + " Baht");
 
+	}
 
 	public static void main(String[] args) {
 		Scanner sc =new Scanner (System.in);
@@ -31,17 +34,16 @@ public class Main {
 		while (checkEmployee==false){
 			System.out.print("Input Your Id: ");
 			String employeeId2= sc2.nextLine();
-			System.out.println(employeeId);
-			System.out.println(employeeId2);
 //				if(employeeId2==employeeId) {
+//					System.out.print("EmployeeID True");
 					System.out.print("Input monthly sales : ");
 					int monthlysales = sc.nextInt();
 					double compen=Calculate(monthlysales,salary);
-					
+					printcompensation(employeeName,compen);
 					checkEmployee=true;
 //				}
 //				else {
-//					System.out.println("Id Not Found");
+//					System.out.println("ID Not Found");
 //				}
 			}
 	}
